@@ -2,9 +2,8 @@ package Lab2;
 
 public class LegoContainers {
     public static void main(String[] args) {
-        int amountOfBricksGay = 73; // Odd number between 50 and 100
-        int containerCapacityGay = 8; // Even number between 5 and 10
-
+        int amountOfBricksGay = 73;
+        int containerCapacityGay = 8;
         System.out.println("Total amount of Lego bricks: " + amountOfBricksGay);
         System.out.println("Single container capacity: " + containerCapacityGay);
 

@@ -1,6 +1,6 @@
 package lab7;
 
-public class Dog extends Mammal {
+public class Dog extends Mammal implements AnimalBehavior {
     private String breed;
 
     public Dog() {
@@ -19,6 +19,15 @@ public class Dog extends Mammal {
     }
 
     @Override
+    public void sleep(){
+        System.out.println(getName() + "the Dog is sleeping in its kennel");
+    }
+    @Override
+    public void move(){
+        System.out.println("Dog runs on four legs.");
+    }
+
+    @Override
     public void eat(String food) {
         System.out.println(getName() + " the dog is crunching on " + food);
     }
@@ -32,8 +41,12 @@ public class Dog extends Mammal {
         System.out.println(getName() + " is fetching the ball!");
     }
 
-    public String getBreed() { return breed; }
-    public void setBreed(String breed) { this.breed = breed; }
+    public String getBreed() {
+        return breed;
+    }
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 
     @Override
     public String toString() {

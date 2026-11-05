@@ -1,6 +1,6 @@
 package lab7;
 
-public class Blowfish extends Fish {
+public class Blowfish extends Fish implements AnimalBehavior{
     private int diameter;
 
     public Blowfish() {
@@ -16,6 +16,16 @@ public class Blowfish extends Fish {
     public Blowfish(String name, int diameter) {
         super(name, "Yellow");
         this.diameter = diameter;
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(getName() + " the Blowfish is sleeping at the bottom of the sea.");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Blowfish swims slowly underwater.");
     }
 
     @Override

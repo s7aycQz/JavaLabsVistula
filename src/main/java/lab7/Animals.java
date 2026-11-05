@@ -1,6 +1,6 @@
 package lab7;
 
-public abstract class Animals {
+public abstract class Animals implements AnimalMove {
     private String name;
     private int age;
     private double weight;
